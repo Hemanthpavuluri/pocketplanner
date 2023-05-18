@@ -1,0 +1,82 @@
+@startuml class_diagram
+set namespaceSeparator ::
+
+class "pocketplanner::firebase_options.dart::DefaultFirebaseOptions" {
+  {static} +FirebaseOptions web
+  {static} +FirebaseOptions android
+  {static} +FirebaseOptions ios
+  {static} +FirebaseOptions macos
+  {static} +FirebaseOptions currentPlatform
+}
+
+"pocketplanner::firebase_options.dart::DefaultFirebaseOptions" o-- "firebase_core_platform_interface::firebase_core_platform_interface.dart::FirebaseOptions"     
+
+class "pocketplanner::main.dart::MyApp" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "pocketplanner::main.dart::MyApp"
+
+class "pocketplanner::screens::login_page.dart::login_page" {
+  +_LoginPageState createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "pocketplanner::screens::login_page.dart::login_page"
+
+class "pocketplanner::screens::login_page.dart::_LoginPageState" {
+  -GlobalKey<FormState> _formKey
+  -TextEditingController _emailController
+  -TextEditingController _passwordController
+  +void dispose()
+  +Widget build()
+}
+
+"pocketplanner::screens::login_page.dart::_LoginPageState" o-- "flutter::src::widgets::framework.dart::GlobalKey<FormState>"
+"pocketplanner::screens::login_page.dart::_LoginPageState" o-- "flutter::src::widgets::editable_text.dart::TextEditingController"
+"flutter::src::widgets::framework.dart::State" <|-- "pocketplanner::screens::login_page.dart::_LoginPageState"
+
+class "pocketplanner::screens::signup_page.dart::signup_page" {
+  +_SignupPageState createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "pocketplanner::screens::signup_page.dart::signup_page"
+
+class "pocketplanner::screens::signup_page.dart::_SignupPageState" {
+  -GlobalKey<FormState> _formKey
+  -TextEditingController _nameController
+  -TextEditingController _emailController
+  -TextEditingController _passwordController
+  -TextEditingController _confirmpasswordController
+  +void dispose()
+  +Widget build()
+}
+
+"pocketplanner::screens::signup_page.dart::_SignupPageState" o-- "flutter::src::widgets::framework.dart::GlobalKey<FormState>"
+"pocketplanner::screens::signup_page.dart::_SignupPageState" o-- "flutter::src::widgets::editable_text.dart::TextEditingController"
+"flutter::src::widgets::framework.dart::State" <|-- "pocketplanner::screens::signup_page.dart::_SignupPageState"
+
+class "pocketplanner::screens::welcome_page.dart::welcome_page" {
+  +State<welcome_page> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "pocketplanner::screens::welcome_page.dart::welcome_page"
+
+class "pocketplanner::screens::welcome_page.dart::_MyWidgetState" {
+  -AnimationController _animationController
+  -AnimationController _animationController2
+  -AnimationController _animationController3
+  -Animation<Offset> _animationOffset
+  -Animation<Offset> _animationOffset2
+  -Animation<Offset> _animationOffset3
+  +void initState()
+  +void dispose()
+  +Widget build()
+}
+
+"pocketplanner::screens::welcome_page.dart::_MyWidgetState" o-- "flutter::src::animation::animation_controller.dart::AnimationController"
+"pocketplanner::screens::welcome_page.dart::_MyWidgetState" o-- "flutter::src::animation::animation.dart::Animation<Offset>"
+"flutter::src::widgets::framework.dart::State" <|-- "pocketplanner::screens::welcome_page.dart::_MyWidgetState"
+"flutter::src::widgets::ticker_provider.dart::TickerProviderStateMixin" <|-- "pocketplanner::screens::welcome_page.dart::_MyWidgetState"
+
+
+@enduml

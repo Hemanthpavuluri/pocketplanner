@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "649779653632",
+    "project_id": "budgetplanner-7f541",
+    "storage_bucket": "budgetplanner-7f541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649779653632:android:3cd7b14162bbb0603f7ce5",
+        "android_client_info": {
+          "package_name": "com.example.pocketplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649779653632-ivdqjg1a4f2u4rr5nq4dtrmbenn7iug3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EtWPvI_nmCs3rU22xRhnsFQEizI10Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649779653632-ivdqjg1a4f2u4rr5nq4dtrmbenn7iug3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "649779653632-j65t7d2bk93mquki2avdu6t53hdrer9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.budgetapp.pocketplanner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
