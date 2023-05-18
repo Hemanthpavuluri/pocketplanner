@@ -1,6 +1,6 @@
 # pocketplanner
 
-A new Flutter project.
+A mobile application that helps to manage the budget of your monthly,or yearly expenses.
 
 ## Getting Started
 
