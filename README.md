@@ -22,6 +22,10 @@ A mobile application that helps to manage the budget of your monthly,or yearly e
 
 <img width="250" alt="Screen Shot 2023-05-18 at 12 35 18 PM" src="https://github.com/Hemanthpavuluri/pocketplanner/assets/68024503/e76fa9e9-64a3-46d5-8e0d-e6ea36c92d84">
 
+https://github.com/Hemanthpavuluri/pocketplanner/assets/68024503/5ed127d0-4265-4ed8-b679-3e095f5ecf44
+
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
